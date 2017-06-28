@@ -1,1 +1,8 @@
 *.pyc
+db.sqlite3
+ivybridge/settings.py
+*.pyc
+ivybridge/settings.py
+mydatabase
+*.pyc
+db.sqlite3

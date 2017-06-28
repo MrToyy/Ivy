@@ -30,7 +30,8 @@ SECRET_KEY = 'dy2-5ze$1ql9q8-69n!t7#rl6tkv7@#v3tf#_o0gl%v@20kfh@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["35.185.131.218"]
+#ALLOWED_HOSTS = ["35.185.131.218"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'ivybridge.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -89,7 +90,13 @@ DATABASES = {
         'PASSWORD': 'xPA1hJAp',
     }
 }
-
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
